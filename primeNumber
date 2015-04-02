@@ -1,0 +1,31 @@
+#include <iostream>
+#include<math.h>
+
+int main(){
+int a;
+int b;
+std::cout << "Enter a number ";
+std::cin >> a;
+
+int counter =0;
+
+
+for(int i=2; i<(a/2) ; i++){
+
+	if( a % i == 0){
+		
+			counter=1;
+		break;
+	}else{
+	
+	}
+}
+std::cout << counter;
+if(counter==0){
+	std::cout << "prime";
+}else{
+std::cout << "\nnot a prime";
+
+}
+return 0;
+}
