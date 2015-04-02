@@ -1,0 +1,30 @@
+#include <iostream>
+
+
+int main(){
+const char *t = "Hello Daworld";
+int a= 0;
+int n = 0;
+
+std::cout << "\nHello World!";
+std::cout << t;
+	for(int x=0;x<5; x++){
+			std::cout<< "\nHello for wolrd";
+	}
+
+std::cout<< "\n";	
+while(a<4){
+	std::cout<<"hell while world";
+a++;
+}
+
+do{
+std::cout<<"\nso many loops jesus";
+n++;
+}
+while(n<3);
+
+
+
+return 0;
+}
