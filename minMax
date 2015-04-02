@@ -1,0 +1,79 @@
+# include <iostream>
+
+
+ int main ()
+{
+	int n;
+std::cout << "Enter the number of integers you want ";
+std::cin >> n;
+std::cout << "\nThe number you selected is " << n;
+int max=0;
+int min=0;
+int a;
+int b;
+int c;
+/*
+//for(int i=0; i<n; i++){
+	//if(i=0){
+		//std::cout << "\n At part A " ;
+		//std::cin >> a;
+			//	std::cout << "\n A is  "  << a;
+	//}else if(i=1){
+		//std::cin >> b;
+//	}else if(i=2){
+	//	std::cin >> c;
+	//}else{
+		//std::cout << "program broke";
+	//}
+//}
+/**/
+
+std::cout << "\nEnter a ";
+std::cin >> a;
+std::cout << "\nA is " << a; 
+std::cout << "\nEnter b ";
+std::cin >> b;
+std::cout << "\nEnter c ";
+std::cin >> c;
+int m = (a+b+c) / n;
+std::cout << "\nThe mean is "<< m;
+
+if(a > c && a>b){
+	std::cout << "\nThe max is " << a;
+	 max =a;
+	std::cout << "printed a ";
+}else if (b > a &&  b>c){
+	std::cout << "\nThe max is " <<b;
+	 max =b;
+	std::cout << "printed b " ;
+}else if(c > a && b>a){
+	std::cout <<"\nThe max is " <<c;
+	 max =c;
+		std::cout << "printed c " ;
+}else{
+	std::cout << "Idk what it is ";
+}
+
+if(a < b && a<c){
+	std::cout << "\nThe min is " << a;
+	min =a;
+		std::cout << "printed a " ;
+}else if (b < a && b<c){
+	std::cout << "\nThe min is " << b;
+	 min =b;
+		std::cout << "printed b " ;
+}else if(c < a && c< b){
+	std::cout << "\nThe min is "  << c;
+	 min =c;
+		std::cout << "printed c " ;
+}else{
+	std::cout << "idk what it is";
+}
+std::cout << "\nMax is " << max;
+std::cout << "\nmin is " << min;
+double range =  max - min;
+std::cout << "\nThe range is " << range;	
+std::cout << "\n";
+	
+	
+return 0;
