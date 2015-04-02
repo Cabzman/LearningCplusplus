@@ -1,0 +1,16 @@
+#include <iostream>
+
+int main(){
+int n =0;
+int v =0;	
+while( n==0)	{
+	std::cout << "\nTaking in a number ";
+	std::cin >> v;
+	
+	if(	(v>0 && v % 5 ==0)){
+		(std::cout << "Number divided by 5 is " << (v/5));
+		continue;
+	}
+}
+return 0;
+}
